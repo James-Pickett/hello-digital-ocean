@@ -1,4 +1,4 @@
-export GH_TOKEN=$(~/.gh/token)
+export GH_TOKEN=$(cat ~/.gh/token)
 
 # return the git branch
 parse_git_branch() {
