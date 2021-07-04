@@ -1,4 +1,3 @@
-# export GH_TOKEN=$(cat ~/.gh/token)
 export GH_TOKEN=$(~/.gh/token)
 
 # return the git branch
