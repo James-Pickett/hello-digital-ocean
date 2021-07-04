@@ -1,4 +1,4 @@
-export GH_TOKEN=$(cat ~/.gh/token)
+export DO_TOKEN=$(cat ~/.digitalocean/token)
 
 # return the git branch
 parse_git_branch() {

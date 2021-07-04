@@ -1,0 +1,16 @@
+{
+  "emeraldwalk.runonsave": {
+    "commands": [
+      {
+        // run terraform fmt & terraform validate on the folder each time you save at file with .tf
+        "match": "\\.tf$",
+        "cmd": "cd ${fileDirname}; echo fmt:; terraform fmt -recursive -no-color; echo validate:; terraform validate -no-color;"
+      },
+      {
+        // run terraform fmt & terraform validate on the folder each time you save at file with .tfvars
+        "match": "\\.tfvars$",
+        "cmd": "cd ${fileDirname}; terraform fmt -recursive -no-color; terraform validate -no-color;"
+      }
+    ]
+  }
+}
